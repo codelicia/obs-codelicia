@@ -59,8 +59,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Monitor + small cam",
-    "current_scene": "Monitor + small cam",
+    "current_program_scene": "Full cam + Monitor",
+    "current_scene": "Full cam + Monitor",
     "current_transition": "Luma Wipe",
     "groups": [],
     "modules": {
@@ -356,9 +356,9 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "height": 650,
+                "height": 660,
                 "url": "",
-                "width": 400
+                "width": 430
             },
             "sync": 0,
             "versioned_id": "linuxbrowser-source",
@@ -621,8 +621,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -0.89687502384185791,
-                            "y": 0.89722222089767456
+                            "x": -0.7890625,
+                            "y": 0.78888887166976929
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -645,13 +645,13 @@
                         "name": "Monitor",
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": 7.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.73697918653488159,
-                            "y": 0.7370370626449585
+                            "x": 0.73072916269302368,
+                            "y": 0.73055553436279297
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -674,13 +674,13 @@
                         "name": "Event",
                         "pos": {
                             "x": 0.0,
-                            "y": 814.75
+                            "y": 815.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.7687499523162842,
-                            "y": 1.7683333158493042
+                            "x": 1.7649999856948853,
+                            "y": 1.7666666507720947
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -702,8 +702,8 @@
                         "locked": false,
                         "name": "Chat",
                         "pos": {
-                            "x": 1449.0,
-                            "y": 282.0
+                            "x": 1413.675048828125,
+                            "y": 303.085693359375
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -731,8 +731,8 @@
                         "locked": false,
                         "name": "Alert",
                         "pos": {
-                            "x": 505.0,
-                            "y": 0.0
+                            "x": 545.0,
+                            "y": 254.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -921,7 +921,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color_range": 2,
-                "device_id": "/dev/video1",
+                "device_id": "/dev/video0",
                 "framerate": 65566,
                 "input": 0,
                 "pixelformat": 1448695129,
@@ -1046,14 +1046,14 @@
                         "locked": false,
                         "name": "Webcam",
                         "pos": {
-                            "x": 1920.0,
+                            "x": 1408.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -1.0,
-                            "y": 1.0
+                            "x": -2.2000000476837158,
+                            "y": 2.2000000476837158
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1105,13 +1105,13 @@
                         "name": "Event",
                         "pos": {
                             "x": 0.0,
-                            "y": 830.0
+                            "y": 816.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.6662499904632568,
-                            "y": 1.6666666269302368
+                            "x": 1.7599999904632568,
+                            "y": 1.7599999904632568
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1133,8 +1133,8 @@
                         "locked": false,
                         "name": "Chat",
                         "pos": {
-                            "x": 1451.0,
-                            "y": 318.0
+                            "x": 1415.824951171875,
+                            "y": 306.2769775390625
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1162,8 +1162,8 @@
                         "locked": false,
                         "name": "Alert",
                         "pos": {
-                            "x": 511.0,
-                            "y": 0.0
+                            "x": 548.0,
+                            "y": 262.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
