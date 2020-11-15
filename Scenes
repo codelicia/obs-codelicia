@@ -59,8 +59,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Full cam + Monitor",
-    "current_scene": "Full cam + Monitor",
+    "current_program_scene": "Busy",
+    "current_scene": "Busy",
     "current_transition": "Luma Wipe",
     "groups": [],
     "modules": {
@@ -1412,8 +1412,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -1.0,
-                            "y": 1.0
+                            "x": -3.0,
+                            "y": 3.0
                         },
                         "scale_filter": "disable",
                         "visible": true
