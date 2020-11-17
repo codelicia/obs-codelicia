@@ -59,8 +59,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Busy",
-    "current_scene": "Busy",
+    "current_program_scene": "Offline",
+    "current_scene": "Offline",
     "current_transition": "Luma Wipe",
     "groups": [],
     "modules": {
@@ -114,7 +114,7 @@
             }
         ]
     },
-    "name": "Scenes",
+    "name": "Codelicia",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -400,7 +400,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Video Capture Device (V4L2)",
+            "name": "HDMI",
             "prev_ver": 419430406,
             "private_settings": {},
             "push-to-mute": false,
@@ -408,7 +408,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "device_id": "/dev/video2",
+                "device_id": "/dev/video0",
                 "input": 0,
                 "pixelformat": 861030210
             },
@@ -511,6 +511,7 @@
                 "libobs.hide_scene_item.Alert": [],
                 "libobs.hide_scene_item.Chat": [],
                 "libobs.hide_scene_item.Event": [],
+                "libobs.hide_scene_item.HDMI": [],
                 "libobs.hide_scene_item.Mic LiveChat": [],
                 "libobs.hide_scene_item.Monitor": [],
                 "libobs.hide_scene_item.Sound LiveChat": [],
@@ -519,6 +520,7 @@
                 "libobs.show_scene_item.Alert": [],
                 "libobs.show_scene_item.Chat": [],
                 "libobs.show_scene_item.Event": [],
+                "libobs.show_scene_item.HDMI": [],
                 "libobs.show_scene_item.Mic LiveChat": [],
                 "libobs.show_scene_item.Monitor": [],
                 "libobs.show_scene_item.Sound LiveChat": [],
@@ -538,7 +540,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 29,
+                "id_counter": 33,
                 "items": [
                     {
                         "align": 5,
@@ -621,8 +623,37 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -0.7890625,
-                            "y": 0.78888887166976929
+                            "x": -0.26406249403953552,
+                            "y": 0.2638888955116272
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 33,
+                        "locked": false,
+                        "name": "HDMI",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.73697918653488159,
+                            "y": 0.7370370626449585
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -654,7 +685,7 @@
                             "y": 0.73055553436279297
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -786,9 +817,11 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Lua Clock": [],
                 "libobs.hide_scene_item.MessageBeRightBack": [],
                 "libobs.hide_scene_item.Title": [],
                 "libobs.hide_scene_item.melancia": [],
+                "libobs.show_scene_item.Lua Clock": [],
                 "libobs.show_scene_item.MessageBeRightBack": [],
                 "libobs.show_scene_item.Title": [],
                 "libobs.show_scene_item.melancia": []
@@ -806,7 +839,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 4,
+                "id_counter": 5,
                 "items": [
                     {
                         "align": 5,
@@ -894,6 +927,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": false,
+                        "name": "Lua Clock",
+                        "pos": {
+                            "x": 1581.0,
+                            "y": 777.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.48800000548362732,
+                            "y": 0.48800000548362732
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
                     }
                 ]
             },
@@ -921,11 +983,11 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color_range": 2,
-                "device_id": "/dev/video0",
-                "framerate": 65566,
+                "device_id": "/dev/video2",
+                "framerate": 65596,
                 "input": 0,
-                "pixelformat": 1448695129,
-                "resolution": 41943400
+                "pixelformat": 861030210,
+                "resolution": -1
             },
             "sync": 0,
             "versioned_id": "v4l2_input",
@@ -942,6 +1004,7 @@
                 "libobs.hide_scene_item.Alert": [],
                 "libobs.hide_scene_item.Chat": [],
                 "libobs.hide_scene_item.Event": [],
+                "libobs.hide_scene_item.HDMI": [],
                 "libobs.hide_scene_item.Mic LiveChat": [],
                 "libobs.hide_scene_item.Monitor": [],
                 "libobs.hide_scene_item.Sound LiveChat": [],
@@ -950,6 +1013,7 @@
                 "libobs.show_scene_item.Alert": [],
                 "libobs.show_scene_item.Chat": [],
                 "libobs.show_scene_item.Event": [],
+                "libobs.show_scene_item.HDMI": [],
                 "libobs.show_scene_item.Mic LiveChat": [],
                 "libobs.show_scene_item.Monitor": [],
                 "libobs.show_scene_item.Sound LiveChat": [],
@@ -969,7 +1033,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 13,
                 "items": [
                     {
                         "align": 5,
@@ -1046,14 +1110,43 @@
                         "locked": false,
                         "name": "Webcam",
                         "pos": {
+                            "x": 1406.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": -0.73229163885116577,
+                            "y": 0.73240739107131958
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 13,
+                        "locked": false,
+                        "name": "HDMI",
+                        "pos": {
                             "x": 1408.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -2.2000000476837158,
-                            "y": 2.2000000476837158
+                            "x": 0.26666668057441711,
+                            "y": 0.26666668057441711
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1085,7 +1178,7 @@
                             "y": 0.26111111044883728
                         },
                         "scale_filter": "disable",
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -1218,11 +1311,11 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Default Audio": [],
+                "libobs.hide_scene_item.HDMI": [],
                 "libobs.hide_scene_item.Monitor": [],
-                "libobs.hide_scene_item.Video Capture Device (V4L2)": [],
                 "libobs.show_scene_item.Default Audio": [],
-                "libobs.show_scene_item.Monitor": [],
-                "libobs.show_scene_item.Video Capture Device (V4L2)": []
+                "libobs.show_scene_item.HDMI": [],
+                "libobs.show_scene_item.Monitor": []
             },
             "id": "scene",
             "mixers": 0,
@@ -1283,7 +1376,7 @@
                         "group_item_backup": false,
                         "id": 5,
                         "locked": false,
-                        "name": "Video Capture Device (V4L2)",
+                        "name": "HDMI",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -1412,8 +1505,8 @@
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": -3.0,
-                            "y": 3.0
+                            "x": -1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1574,6 +1667,29 @@
             },
             "sync": 0,
             "versioned_id": "text_ft2_source_v2",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "lua_clock_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Lua Clock",
+            "prev_ver": 419430406,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "versioned_id": "lua_clock_source",
             "volume": 1.0
         }
     ],
